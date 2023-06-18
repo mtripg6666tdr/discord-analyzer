@@ -1,0 +1,21 @@
+.image_preview {
+  display: inline-block;
+  min-width: 240px;
+  min-height: 240px;
+  max-width: 100%;
+  border: 1px solid rgba($color: #999999, $alpha: 0.2);
+  aspect-ratio: 1/1;
+  overflow: auto;
+  background-color: gray;
+
+  &>div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}
+
+.vspacing {
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
