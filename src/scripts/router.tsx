@@ -23,7 +23,7 @@ export default function Router(){
         }
       }
       let currentQueryParams = new URLSearchParams(hash);
-      if(Date.now() - ((Number(window.localStorage.getItem("__discord_obtained_at")) || 0) + (Number(currentQueryParams.get("expires_in"))) || 0) > 0){
+      if(Date.now() - ((Number(window.localStorage.getItem("__discord_obtained_at")) || 0) + (Number(currentQueryParams.get("expires_in")) || 0) * 1000) > 0){
         hash = "";
         currentQueryParams = new URLSearchParams();
       }

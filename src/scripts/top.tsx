@@ -10,7 +10,7 @@ export default function Top(){
   return (
     <>
       <div className="narrow">
-        <p>Discordアカウントでログインして、参加しているサーバーに関する生の情報をAPIから呼び出して表示できます。</p>
+        <p>Discordアカウントでログインして、ユーザーや、参加しているサーバーの生のデータをAPIから呼び出して表示できます。</p>
         <p>Discordアカウントでのログイン情報はこのサイトのサーバーには送信されず、ブラウザで処理されます。</p>
         <form action="https://discord.com/oauth2/authorize">
           <input type="hidden" name="response_type" value="token" />
