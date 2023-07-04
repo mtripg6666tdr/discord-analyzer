@@ -43,7 +43,8 @@ export default function Router(){
     window.localStorage.removeItem("__discord_hash");
     window.localStorage.removeItem("__oauth_state");
     window.localStorage.removeItem("__discord_obtained_at");
-    window.location.replace("/");
+    window.location.hash = "";
+    window.location.reload();
   }, []);
 
   if(["token_type", "access_token", "state"].every(key => queryParams?.has(key)) && queryParams?.get("state") === prevState){
